@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    src: url('fonts/Raleway/Raleway-Regular.ttf');
+    font-family: "raleway-normal";
+}
+@font-face{
+    src: url('fonts/Raleway/Raleway-Bold.ttf');
+    font-family: "raleway-bold";
+}
+@font-face{
+    src: url('fonts/Raleway/Raleway-ExtraLight.ttf');
+    font-family: "raleway-light"
+}
+@font-face{
+    src: url('fonts/Open-sans/OpenSans-Regular.ttf');
+    font-family: "open-sans";
+}
+@font-face{
+    src: url('fonts/Open-sans/OpenSans-Bold.ttf');
+    font-family: "open-sans-bold";
+}
+@font-face{
+    src: url('fonts/Caveat/Caveat-Regular.ttf');
+    font-family: "caveat";
+}
+@font-face{
+    src: url('fonts/roboto/RobotoCondensed-Regular.ttf');
+    font-family: "roboto-Condensed";
+}
+@font-face{
+    src: url('fonts/roboto/RobotoCondensed-Bold.ttf');
+    font-family: "roboto-Condensed-bold";
+}
+
+.header{
+    background: url('img/cover_image.jpg') no-repeat center center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #654ea3c7, #eaafc8be);
+}
+#particles-js canvas{
+    position: fixed;
+    top: 0;
+}
+.menu-bg-color{
+    background: transparent !important;
+}
+.navbar-brand{
+    font-family: 'open-sans-bold';
+    text-transform: uppercase;
+    color: #fff !important;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px #2d2a2a;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+.toggler-btn{
+    position: relative;
+    z-index: 1;
+}
+.nav-link{
+    font-family: "raleway-normal";
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff !important;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #eaafc8be;
+    bottom: 0;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.marking-tag{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    background: #bb2c33;
+    box-shadow: 0 0 5px #443b3b;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+.marking-tag span{
+    font-family: 'caveat';
+    font-size: 35px;
+    color: #fff;
+}
+.title{
+    position: relative;
+    z-index: 1;
+}
+.txt-type > .txt {
+    border-right: 0.2rem solid #fff;
+    font-family: 'raleway-bold';
+    font-size: 50px;
+    color:#fff;
+    text-shadow: 0 0 6px #2d2a2a;
+}
+
+.scroll-bottom-btn{
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-bottom-btn button{
+    background: transparent;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 23px;
+}
+.resume-heading h2{
+    font-family: "open-sans-bold";
+    text-transform: capitalize;
+    color: #2d2a2a;
+    text-shadow: 1px 4px 4px #ccc;
+}
+.resume-heading span{
+    font-family: "raleway-normal";
+    color: rgb(68, 66, 66);
+}
+.resume-about-heading{
+    font-family: "raleway-normal";
+    color: #2d2a2a;
+    margin-bottom:20px; 
+}
+.resume-about-heading span{
+    font-family: 'raleway-bold';
+    color: #bb2c33;
+}
+.resume article{
+    font-family: "raleway-normal";
+    font-size: 14px;
+    line-height: 2rem;
+    color: rgb(61, 61, 61);
+    margin-bottom: 20px;
+}
+.resume-download-btn{
+    padding: 10px 30px;
+    font-family: "roboto-Condensed-bold";
+    background: #bb2c33;
+    border: none;
+    color:#fff;
+    box-shadow: 0 0 2px 1px #6f6f6f;
+}
+.general-skills h5{
+    font-family: "roboto-Condensed";
+    color: #4d4a4a;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.skill{
+    display: block;
+    min-height: 30px;
+    font-family: 'roboto-Condensed';
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#6f6f6f;
+}
+.skill-name{
+    float: left;
+}
+.skill-parcentage{
+    float:right;
+}
+.progress{
+    height: 5px;
+    border-radius:unset;
+    margin-bottom: 2rem;
+}
+.progress-bar{
+    background: #654ea3;
+}
+.educations h5{
+    font-family: "roboto-Condensed";
+    text-transform: uppercase;
+    color: #4d4a4a;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.education{
+    margin-bottom: 20px;
+}
+.edu-institute h6{
+    font-family: "monospace";
+    text-transform: uppercase;
+    color: #bb2c33;
+    text-shadow: 0 2px 2px #eaafc8;
+}
+.edu-institute h6 i{
+    margin-right: 5px;
+}
+.edu-time{
+    font-family: 'roboto-Condensed';
+    color: #4d4a4a;
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.edu-time i{
+    margin-right: 5px;
+}
+.degree{
+    font-family: "roboto-Condensed-bold";
+    text-transform: uppercase;
+    color: #4d4a4a;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.bottom-border{
+    width: 100px;
+    height: 2px;
+    background: #654ea3;
+}
