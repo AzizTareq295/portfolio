@@ -134,16 +134,18 @@
     border: 2px solid;
     font-size: 23px;
 }
-.resume-heading h2{
+
+.section-heading h2{
     font-family: "open-sans-bold";
     text-transform: capitalize;
     color: #2d2a2a;
-    text-shadow: 1px 4px 4px #ccc;
+    text-shadow: 1px 1px 4px #ccc;
 }
-.resume-heading span{
+.section-heading span{
     font-family: "raleway-normal";
     color: rgb(68, 66, 66);
 }
+
 .resume-about-heading{
     font-family: "raleway-normal";
     color: #2d2a2a;
@@ -240,4 +242,140 @@
     width: 100px;
     height: 2px;
     background: #654ea3;
+}
+.project{
+    padding-bottom: 20px;
+    border-bottom:2px solid #ddd;
+    box-shadow: 0 2px 11px #f1f1f1;
+}
+.project a{
+    text-decoration: none;
+}
+.thumbnail{
+    height: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-bottom: none;
+    overflow: hidden;
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .3s ease-in;
+}
+.project-name h6{
+    font-family: "raleway-bold";
+    color: #4d4a4a;
+    font-size: 18px;
+}
+.project-name p{
+    font-family: "monospace";
+    color: #bb2c33;
+}
+.project-name span{
+    font-family: "open-sans";
+    color: #7b7979;
+    font-weight: 600
+}
+.project a:hover .thumbnail>img{
+    transform: scale(1.08)
+}
+.contact-info{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+#map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: url('img/newsletter.jpg') no-repeat center center;
+    background-size: cover;
+}
+#map::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.contact-info-body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contact-info-body .section-heading>h2, 
+.contact-info-body .section-heading>span{
+    color: #fff;
+}
+.contact-input, .contact-message{
+    border-radius: 20px;
+    background: transparent;
+    color:#fff;
+    font-family: "raleway-normal"
+}
+.contact-input:focus, .contact-message:focus{
+    background: transparent;
+    border-color: #ddd;
+    box-shadow: 0 0 5px #9c9c9c;
+    color:#fff;
+}
+.contact-info-body label{
+    color: #fff;
+    font-family: "raleway-bold";
+    padding: 10px;
+}
+.contact-btn{
+    padding: 10px 30px;
+    background: #bb2c33;
+    color: #fff;
+    font-family: "roboto-Condensed-bold";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+.contact-btn:hover{
+    color:#fff;
+}
+.contact-btn:focus{
+    box-shadow: 0 0 5px #9c9c9c;
+}
+.footer{
+    background: #4d4a4a;
+    width: 100%;
+    min-height: 100px;
+}
+
+.social-icons ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-icons ul li{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+.social-icons ul li a{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 50%;
+    margin: 10px 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.social-icons ul li a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
