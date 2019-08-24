@@ -8,42 +8,41 @@
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
     
 </head>
 <body>
     <div class="header" id="particles-js">
-        <div class="container" style="height: 100vh">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light menu-bg-color">
-                        <a class="navbar-brand" href="#">tareq</a>
-                        <button class="navbar-toggler toggler-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Resume <span class="sr-only"></span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Portfolio <span class="sr-only"></span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Testimonials <span class="sr-only"></span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacts <span class="sr-only"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+        <div class="menubar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light menu-bg-color">
+                <a class="navbar-brand" href="#particles-js">tareq</a>
+                <button class="navbar-toggler toggler-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#particles-js">Home <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts <span class="sr-only"></span></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        <div class="row align-items-center" style="height:90vh">
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row align-items-center" style="height:100vh">
                 <div class="col-12 mt-5 text-center">
                     <div class="marking-tag mt-5">
                         <span>I'm Tareq Aziz</span>
@@ -53,16 +52,16 @@
                     </div>
                     <div class="scroll-bottom mt-5">
                         <div class="scroll-bottom-btn">
-                            <button type="button">
+                            <a href="#resume">
                                 <i class="fas fa-angle-double-down"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="resume">
+    <div id='resume' class="resume">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center py-5 section-heading">
@@ -226,7 +225,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div id='portfolio' class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center py-5 section-heading">
@@ -281,7 +280,40 @@
             </div>
         </div>
     </div>
-    <div class="contact-info">
+    <div id="testimonials" class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center py-5 section-heading">
+                    <h2 class="mb-2">Testimonials</h2>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, quibusdam!</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="my-clients">
+                        <span>My Client's</span>
+                    </div>
+                </div>
+                <div class="col-lg-12 py-5">
+                    <div class="all-testimonial owl-carousel owl-theme">
+                        <div class="testimonial-body">
+                            <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vel sed reprehenderit at iusto soluta, magni voluptates est nobis ex adipisci saepe odio perspiciatis dolorum ut voluptas dignissimos veritatis hic.</article>
+                            <p>-Jhon Doe</p>
+                        </div>
+                        <div class="testimonial-body">
+                            <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vel sed reprehenderit at iusto soluta, magni voluptates est nobis ex adipisci saepe odio perspiciatis dolorum ut voluptas dignissimos veritatis hic.</article>
+                            <p>-Jhon Doe</p>
+                        </div>
+                        <div class="testimonial-body">
+                            <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vel sed reprehenderit at iusto soluta, magni voluptates est nobis ex adipisci saepe odio perspiciatis dolorum ut voluptas dignissimos veritatis hic.</article>
+                            <p>-Jhon Doe</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="contacts" class="contact-info">
         <div  id="map"></div>
         <div class="contact-info-body">
             <div class="container">
@@ -334,10 +366,11 @@
     </div>
     
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="particle/particles.js"></script>
     <script src="particle/demo/js/app.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 
     <script>
     
@@ -409,8 +442,85 @@
     }
 
     </script>
-<!-- <script src="map.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.all-testimonial').owlCarousel({
+                items:1,
+                loop:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:800,
+            });
+        });
+    </script>
+
+    <script>
+    
+        $(document).scroll(function(){
+            var scroll = $(window).scrollTop();
+
+            // alert($(window).innerHeight());
+            var innerHeight = $(window).innerHeight();
+            
+            if(scroll > (innerHeight -50)){
+                $('.menubar').addClass('menu-scroll')
+            }
+            if(scroll < (innerHeight -50)) {
+                $('.menubar').removeClass('menu-scroll')
+            }
+        });
+
+    </script>
+
+<script>
+        $(document).ready(function () {
+            // Select all links with hashes
+            $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    // On-page links
+
+
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+
+                        
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 2000, function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+        });
+    </script>
+
+<script src="map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUlmdT3BgfmNlqBKRDfc9Pb5Ok4VoCit4&callback=initMap"
-  async defer></script> -->
+  async defer></script>
 </body>
 </html>

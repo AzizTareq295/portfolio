@@ -35,6 +35,10 @@
     src: url('fonts/roboto/RobotoCondensed-Bold.ttf');
     font-family: "roboto-Condensed-bold";
 }
+@font-face{
+    src: url('fonts/roboto/RobotoCondensed-Light.ttf');
+    font-family: "roboto-Condensed-light";
+}
 
 .header{
     background: url('img/cover_image.jpg') no-repeat center center ;
@@ -55,8 +59,21 @@
     position: fixed;
     top: 0;
 }
+.menubar{
+    min-height:56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
 .menu-bg-color{
     background: transparent !important;
+    max-width: 1110px;
+    margin: auto;
+}
+.menu-scroll{
+    background: #654ea3c7 !important;
 }
 .navbar-brand{
     font-family: 'open-sans-bold';
@@ -126,13 +143,13 @@
     z-index: 1;
 }
 
-.scroll-bottom-btn button{
+.scroll-bottom-btn a{
     background: transparent;
-    padding: 5px 15px;
+    padding: 12px 10px;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 17px;
     border: 2px solid;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .section-heading h2{
@@ -281,6 +298,75 @@
 .project a:hover .thumbnail>img{
     transform: scale(1.08)
 }
+
+/*===============Testimonial Section Start Here===============*/
+
+.testimonial{}
+.my-clients{
+    display: inline-block;
+    border:3px solid #4d4a4a;
+}
+.my-clients span{
+    font-family: monospace;
+    font-size: 20px;
+    padding: 8px 30px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    display: block
+}
+.all-testimonial .owl-dots{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.all-testimonial .owl-dots .owl-dot{
+    background: #4d4a4a;
+    width: 12px;
+    height: 12px;
+    border-radius:50%;
+    margin: 10px;
+}
+.all-testimonial .owl-dots .owl-dot:focus{
+    outline: none;
+}
+.all-testimonial .owl-dots .active{
+    background: #654ea3;
+}
+.testimonial-body{
+    text-align:center;
+}
+.testimonial-body article{
+    padding: 10px;
+    font-family: 'roboto-Condensed-light';
+    font-style: italic;
+    font-size: 18px;
+}
+.testimonial-body article::before{
+    content: '\f10d';
+    display: inline;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: top;
+    font-size: 10px;
+    color:#4d4a4a
+}
+.testimonial-body article::after{
+    content: '\f10e';
+    display: inline;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: top;
+    font-size: 10px;
+    color:#4d4a4a
+}
+.testimonial-body p{
+    font-family: "roboto-Condensed-bold";
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+/*===============Testimonial Section End Here===============*/
+
 .contact-info{
     position: relative;
     width: 100%;
