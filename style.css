@@ -186,6 +186,8 @@
     border: none;
     color:#fff;
     box-shadow: 0 0 2px 1px #6f6f6f;
+    text-decoration: none;
+    color: #fff;
 }
 .general-skills h5{
     font-family: "roboto-Condensed";
