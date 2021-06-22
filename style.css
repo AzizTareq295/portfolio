@@ -280,11 +280,18 @@
     border: 2px solid #ddd;
     border-bottom: none;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
 }
 .thumbnail img{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 10px;
+    mix-blend-mode: multiply;
     transition: all .3s ease-in;
 }
 .project-name h6{
@@ -302,7 +309,7 @@
     font-weight: 600
 }
 .project a:hover .thumbnail>img{
-    transform: scale(1.08)
+    transform: scale(1.02)
 }
 
 /*===============Testimonial Section Start Here===============*/
